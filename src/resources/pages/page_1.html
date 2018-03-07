@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Page 1: Chores</title>
+		<link href="../style.css" rel="stylesheet" type="text/css"/>
+		<script src="../script.js"></script>
+	</head>
+
+	<body>
+		<h1>Welcome to Page 1: Chores</h1>
+		<p>If you need any help, just remember to ask <a target="_blank" href="https://www.google.com">Google</a></p>
+		<br>
+		<p>Here is the list of pages available:</p>
+		<ul>
+			<li><a href="../pages/page_1.html">Page 1: Chores</a></li>
+			<li><a href="../pages/page_2.html">Page 2: Fun</a></li>
+			<li><a href="../index.html">Back to Index</a></li>
+		</ul>
+		<br>
+		<p>Have you done your chores?</p>
+		<ul>
+			<li>Wash the dishes <button onClick="revealMessage('dishes', true)">Yes</button> <button onClick="revealMessage('dishes', false)">No</button></li>
+			<li>Clean your room <button onClick="revealMessage('room', true)">Yes</button> <button onClick="revealMessage('room', false)">No</button></li>
+			<li>Take out the trash <button onClick="revealMessage('trash', true)">Yes</button> <button onClick="revealMessage('trash', false)">No</button></li>
+		</ul>
+		<p id="hiddenMessageGood" style="display:none">good message</p>
+		<p id="hiddenMessageBad" style="display:none">bad message</p>
+	</body>
+</html>
