@@ -1,5 +1,6 @@
 body {
 	background: #999;
+	font-family: Calibri;
 }
 
 h1 {
@@ -16,4 +17,23 @@ p a {
 
 td {
 	padding: 5px 10px 5px 5px;
+}
+
+.wrapper {
+    text-align: center;
+		margin-top: 10%;
+}
+
+#love {
+	background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+	border-radius: 12px;
 }
