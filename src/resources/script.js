@@ -7,25 +7,25 @@ function revealMessage(chore, done) {
         text: 'Thank you for doing the dishes',
         icon: "success"
       })
-        break
+        break;
     case 'room':
       swal({
         text: 'Thank you for cleaning your room',
         icon: "success"
       })
-      break
+      break;
     case 'trash':
       swal({
         text: 'Thank you for taking out the trash',
         icon: "success"
       })
-    break
+    break;
     default:
       swal({
         text: 'Good job!',
         icon: "success"
       })
-      break
+      break;
     }
   } else {
     switch(chore) {
@@ -34,25 +34,25 @@ function revealMessage(chore, done) {
         text: 'Don\'t eat like a pig!',
         icon: 'warning'
       })
-      break
+      break;
     case 'room':
       swal({
         text: 'Don\'t live like a hobo!',
         icon: 'warning'
       })
-      break
+      break;
     case 'trash':
         swal({
           text: 'Don\'t be a bum!',
           icon: 'warning'
         })
-        break
+        break;
     default:
       swal({
         text: 'Go do it!',
         icon: 'warning'
       })
-      break
+      break;
     }
   }
 }
@@ -64,25 +64,25 @@ function strikeSuggestion(activity) {
         text: 'You could call another one',
         icon: 'success'
       })
-      break
+      break;
     case 'rideBike':
       swal({
         text: 'That\'s good exercice',
         icon: 'success'
       })
-      break
+      break;
     case 'watchTv':
       swal({
         text: 'Watching TV is a waste of time anyway',
         icon: 'success'
       })
-      break
+      break;
     default:
       swal({
         text: 'Great!',
         icon: 'success'
       })
-      break
+      break;
   }
   document.getElementById(activity).style.textDecorationLine = 'line-through'
   document.getElementById(activity + 'Button').disabled = true
