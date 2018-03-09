@@ -15,13 +15,18 @@
 			<li><a href="../pages/page_2.html">Page 2: Fun</a></li>
 			<li><a href="../index.html">Back to Index</a></li>
 		</ul>
-		<br>
 		<p>Have you done your chores?</p>
-		<ul>
-			<li>Wash the dishes <button onClick="revealMessage('dishes', true)">Yes</button> <button onClick="revealMessage('dishes', false)">No</button></li>
-			<li>Clean your room <button onClick="revealMessage('room', true)">Yes</button> <button onClick="revealMessage('room', false)">No</button></li>
-			<li>Take out the trash <button onClick="revealMessage('trash', true)">Yes</button> <button onClick="revealMessage('trash', false)">No</button></li>
-		</ul>
+		<table>
+			<tr>
+				<td>- Wash the dishes</td><td><button onClick="revealMessage('dishes', true)">Yes</button></td><td><button onClick="revealMessage('dishes', false)">No</button></td>
+			</tr>
+			<tr>
+				<td>- Clean your room</td><td><button onClick="revealMessage('room', true)">Yes</button></td><td><button onClick="revealMessage('room', false)">No</button></td>
+			</tr>
+			<tr>
+				<td>- Take out the trash</td><td><button onClick="revealMessage('trash', true)">Yes</button></td><td><button onClick="revealMessage('trash', false)">No</button></td>
+			</tr>
+		</table>
 		<p id="hiddenMessageGood" style="display:none">good message</p>
 		<p id="hiddenMessageBad" style="display:none">bad message</p>
 	</body>
