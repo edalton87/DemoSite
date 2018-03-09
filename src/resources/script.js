@@ -1,38 +1,89 @@
 function revealMessage(chore, done) {
-  var message;
+  var message
   if (done) {
     switch(chore) {
     case 'dishes':
-        message = 'Thank you for doing the dishes'
-        break;
+      swal({
+        text: 'Thank you for doing the dishes',
+        icon: "success"
+      })
+        break
     case 'room':
-        message = 'Thank you for cleaning your room'
-        break;
+      swal({
+        text: 'Thank you for cleaning your room',
+        icon: "success"
+      })
+      break
     case 'trash':
-        message = 'Thank you for taking out the trash'
-        break;
+      swal({
+        text: 'Thank you for taking out the trash',
+        icon: "success"
+      })
+    break
     default:
-        message = 'That\'s great!'
+      swal({
+        text: 'Good job!',
+        icon: "success"
+      })
+      break
     }
-    document.getElementById('hiddenMessageGood').innerHTML = message;
-    document.getElementById('hiddenMessageGood').style.display = 'block';
-    document.getElementById('hiddenMessageBad').style.display = 'none';
   } else {
     switch(chore) {
     case 'dishes':
-        message = 'Don\'t eat like a pig!'
-        break;
+      swal({
+        text: 'Don\'t eat like a pig!',
+        icon: 'warning'
+      })
+      break
     case 'room':
-        message = 'Don\'t live like a hobo!'
-        break;
+      swal({
+        text: 'Don\'t live like a hobo!',
+        icon: 'warning'
+      })
+      break
     case 'trash':
-        message = 'Don\'t be a bum!'
-        break;
+        swal({
+          text: 'Don\'t be a bum!',
+          icon: 'warning'
+        })
+        break
     default:
-        message = 'That\'s great!'
+      swal({
+        text: 'Go do it!',
+        icon: 'warning'
+      })
+      break
     }
-    document.getElementById('hiddenMessageBad').innerHTML = message;
-    document.getElementById('hiddenMessageGood').style.display = 'none';
-    document.getElementById('hiddenMessageBad').style.display = 'block';
   }
+}
+
+function strikeSuggestion(activity) {
+  switch(activity) {
+    case 'callFriend':
+      swal({
+        text: 'You could call another one',
+        icon: 'success'
+      })
+      break
+    case 'rideBike':
+      swal({
+        text: 'That\'s good exercice',
+        icon: 'success'
+      })
+      break
+    case 'watchTv':
+      swal({
+        text: 'Watching TV is a waste of time anyway',
+        icon: 'success'
+      })
+      break
+    default:
+      swal({
+        text: 'Great!',
+        icon: 'success'
+      })
+      break
+  }
+  document.getElementById(activity).style.textDecorationLine = 'line-through'
+  document.getElementById(activity + 'Button').disabled = true
 }

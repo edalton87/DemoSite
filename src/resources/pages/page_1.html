@@ -2,18 +2,18 @@
 	<head>
 		<title>Page 1: Chores</title>
 		<link href="../style.css" rel="stylesheet" type="text/css"/>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<script src="../script.js"></script>
 	</head>
 
 	<body>
 		<h1>Welcome to Page 1: Chores</h1>
 		<p>If you need any help, just remember to ask <a target="_blank" href="https://www.google.com">Google</a></p>
-		<br>
 		<p>Here is the list of pages available:</p>
 		<ul>
 			<li><a href="../pages/page_1.html">Page 1: Chores</a></li>
 			<li><a href="../pages/page_2.html">Page 2: Fun</a></li>
-			<li><a href="../index.html">Back to Index</a></li>
+			<li><a href="../pages/je_t_aime.html">Le bouton mignon</a></li>
 		</ul>
 		<p>Have you done your chores?</p>
 		<table>
@@ -27,7 +27,5 @@
 				<td>- Take out the trash</td><td><button onClick="revealMessage('trash', true)">Yes</button></td><td><button onClick="revealMessage('trash', false)">No</button></td>
 			</tr>
 		</table>
-		<p id="hiddenMessageGood" style="display:none">good message</p>
-		<p id="hiddenMessageBad" style="display:none">bad message</p>
 	</body>
 </html>
