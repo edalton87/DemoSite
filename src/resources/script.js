@@ -87,3 +87,10 @@ function strikeSuggestion(activity) {
   document.getElementById(activity).style.textDecorationLine = 'line-through'
   document.getElementById(activity + 'Button').disabled = true
 }
+
+function displaySomething() {
+  swal({
+    text: 'Pas mal!',
+    icon: 'success'
+  })
+}
