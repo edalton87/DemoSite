@@ -22,6 +22,15 @@ h1 {
 	font-size: 18px;
 }
 
+.homeText ul {
+	text-align: center;
+}
+
+.homeText li {
+	display: inline-block;
+	padding: 10px 10px;
+}
+
 a {
 	color: white;
 	font-size: 20px;
