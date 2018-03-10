@@ -1,18 +1,51 @@
 <html>
 	<head>
-		<title>Edward's new Website</title>
-		<link href="main_style.css" rel="stylesheet" type="text/css"/>
+		<title>Accueil</title>
+		<link href="home_style.css" rel="stylesheet" type="text/css"/>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<script src="main_script.js"></script>
 	</head>
 
-	<body class="testPage">
-		<h1>Welcome to this website</h1>
-		<p>Here is the list of available pages:</p>
-		<ul>
-			<li><a href="pages/page_1.html">Page 1: Chores</a></li>
-			<li><a href="pages/page_2.html">Page 2: Fun</a></li>
-			<li><a href="pages/je_t_aime.html">Le bouton mignon</a></li>
-			<li><a href="pages/home.html">Accueil</a></li>
-		</ul>
+	<body>
+		<div class="background">
+			<img src="img/le_dramont.jpg" class="stretch"/>
+		</div>
+		<table>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><a onClick="swal({text: 'Page en cours', icon: 'warning'});">Inspirations</a></td>
+				<td></td>
+				<td></td>
+				<td>
+					<a onClick="swal({text: 'Langue d\'affichage : Fran\u00E7ais', icon: 'success'});">FR</a>/
+					<a onclick="swal({text: 'English Language not available yet', icon: 'warning'});">EN</a>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a href="pages/accueil.html">Accueil</a></td>
+				<td></td>
+				<td><a onClick="swal({text: 'Page en cours', icon: 'warning'});">Trouvailles</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><a onClick="swal({text: 'Page en cours', icon: 'warning'});">Questions existencielles</a></td>
+				<td></td>
+				<td><a onClick="swal({text: 'Page en cours', icon: 'warning'});">Partages</a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a href="pages/pensee_neuve.html">La pensée neuve</a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
 	</body>
 </html>
