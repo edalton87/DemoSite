@@ -28,7 +28,23 @@ a {
 	cursor: pointer;
 }
 
+tr {
+	height: 55px;
+}
+
 td {
 	padding: 10px 0px;
 	text-align: center;
+}
+
+.animationDiv {
+	display: none;
+	height: 10px;
+	width: 100%;
+}
+
+.animation {
+	text-align: center;
+	height: 80px;
+	width: 80px;
 }

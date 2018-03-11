@@ -94,3 +94,11 @@ function displaySomething() {
     icon: 'success'
   });
 }
+
+function displayGifForId(animationId) {
+  document.getElementById(animationId).style.display = 'block';
+}
+
+function hideGifForId(animationId) {
+  document.getElementById(animationId).style.display = 'none';
+}
