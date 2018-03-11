@@ -26,10 +26,8 @@
 				<td></td>
 				<td><a href="pages/accueil.html">Accueil</a></td>
 				<td></td>
-				<td><a onClick="swal({text: 'Page en cours', icon: 'warning'});"
-					onmouseover="displayGifForId('trouvailles')"
-					onmouseout="hideGifForId('trouvailles')"
-					>Trouvailles</a>
+				<td onmouseover="displayGifForId('trouvailles')" onmouseout="hideGifForId('trouvailles')">
+					<a onClick="swal({text: 'Page en cours', icon: 'warning'});">Trouvailles</a>
 					<div class="animationDiv" id="trouvailles">
 						<img class="animation" src="img/blooming_pink_rose.gif"/>
 					</div>
@@ -40,10 +38,8 @@
 			<tr>
 				<td></td>
 				<td></td>
-				<td><a onClick="swal({text: 'Page en cours', icon: 'warning'});"
-					onmouseover="displayGifForId('questionsExistentielles')"
-					onmouseout="hideGifForId('questionsExistentielles')"
-					>Questions existentielles</a>
+				<td onmouseover="displayGifForId('questionsExistentielles')" onmouseout="hideGifForId('questionsExistentielles')">
+					<a onClick="swal({text: 'Page en cours', icon: 'warning'});">Questions existentielles</a>
 					<div class="animationDiv" id="questionsExistentielles">
 						<img class="animation" src="img/question_box.gif"/>
 					</div>
