@@ -54,6 +54,10 @@ td {
 	margin-top: 10%;
 }
 
+.imgWrapper {
+	text-align: center;
+}
+
 .love {
 	background-color: #4CAF50; /* Green */
 	border: none;
