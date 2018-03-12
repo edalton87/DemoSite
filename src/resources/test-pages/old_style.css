@@ -1,0 +1,111 @@
+body {
+	background-image: url("../img/lines_patterns_shadow_background.jpg");
+	font-family: Calibri;
+}
+
+.testPage {
+	color: white;
+}
+
+h1 {
+	margin-top: 5%;
+	text-align: center;
+	color: white;
+}
+
+.homeText {
+	background-color: white;
+	margin: 15px;
+	padding: 0.5px 20px 1px 20px;
+}
+
+.homeText p {
+	font-size: 18px;
+}
+
+.homeText ul {
+	text-align: center;
+}
+
+.homeText li {
+	display: inline-block;
+	padding: 10px 10px;
+}
+
+a {
+	color: white;
+	font-size: 20px;
+	margin: 20px;
+}
+
+p a {
+	color: red;
+}
+
+.yahoo {
+	color: purple;
+}
+
+td {
+	padding: 5px 10px 5px 5px;
+}
+
+.wrapper {
+	text-align: center;
+	margin-top: 8%;
+}
+
+.imgWrapper {
+	text-align: center;
+}
+
+button {
+	background-color: darkgreen;
+	border: none;
+	color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.swal-text {
+	text-align: center;
+}
+
+.wrapperSuite {
+	margin-top: 5px;
+	text-align: center;
+	padding: 5px 50px;
+}
+
+.nextButton {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 10px;
+	cursor: pointer;
+	border-radius: 12px;
+}
+
+.previousButton {
+	background-color: red;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 10px;
+	cursor: pointer;
+	border-radius: 12px;
+}
