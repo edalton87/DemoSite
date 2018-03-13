@@ -8,10 +8,11 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
+        System.out.println("Let's solve this");
         System.out.println();
         if (args.length == 0) {
             Main m = new Main();
-            m.solveCalculator(0, 5, -43);
+            m.solveCalculator(0, 7, 28);
         } else {
             System.out.println("arg0 = ".concat(args[0]));
         }
@@ -35,7 +36,6 @@ public class Main {
                         m -= 3;
                         break;
                     case 2:
-                        answer += "<<";
                         if (Math.abs(m) >= 10) {
                             answer += "Reverse";
                             String[] c = String.valueOf(Math.abs(m)).split("");
@@ -48,19 +48,14 @@ public class Main {
                         break;
                     case 3:
                         if (Math.abs(m) >= 10) {
-                            answer += "Reverse";
-                            String[] c = String.valueOf(Math.abs(m)).split("");
-                            String k = "";
-                            for (int i = c.length - 1; i>=0; i--) {
-                                k += c[i];
-                            }
-                            m = m < 0 ? Integer.valueOf(k) * -1 : Integer.valueOf(k);
+                            answer += "<<";
+                            m = m/10;
                         }
                         break;
                 }
                 cpt++;
                 if (cpt < moves) {
-                    answer = answer + " ==> ";
+                    answer += " ==> ";
                 }
             }
         }
