@@ -1,16 +1,27 @@
 function displaySwal () {
   switch (document.getElementById('love').innerHTML) {
     case 'C\'est tout ?':
-      swal("Non, ce n\'est pas tout ...");
+      swal('Non, ce n\'est pas tout ...');
       document.getElementById('love').innerHTML = 'Tu me manques ...';
       break;
     case 'Tu me manques ...':
-      swal("J\'ai hâte de te revoir !!!");
+      swal('J\'ai hâte de te revoir !!!');
+      document.getElementById('love').innerHTML = 'T\'es jalouse ?';
+      break;
+    case 'T\'es jalouse ?':
+      swal('Eh ben, tu as maintenant 2 boutons !');
+      document.getElementById('love').innerHTML = 'Cliques moi !';
+      document.getElementById('love2').innerHTML = 'Non, pas lui. Moi !';
+      document.getElementById('love2').style.display = 'inline-block';
+      break;
+    case 'Cliques moi !':
+      swal('En tout cas ils font tous les 2 la même chose\n^^\'');
       document.getElementById('love').innerHTML = 'Une dernière ...';
+      document.getElementById('love2').style.display = 'none';
       break;
     case 'Une dernière ...':
       swal("Je te vois bientôt !");
-      document.getElementById('love').innerHTML = 'Tu sais quoi ?';
+      document.getElementById('love').innerHTML = 'On recommence ?';
       break;
     default:
       swal("Je t'aime !");
