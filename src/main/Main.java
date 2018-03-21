@@ -10,7 +10,6 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        System.out.println("Let's solve this");
         System.out.println();
         if (args.length == 0) {
             Main m = new Main();
@@ -21,6 +20,8 @@ public class Main {
     }
 
     private void solveCalculator(int startValue, int moves, int goal) {
+        System.out.println("Let's solve this");
+        System.out.println();
         String answer = "";
         int m = startValue;
         while (m != goal) {
