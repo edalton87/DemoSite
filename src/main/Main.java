@@ -1,3 +1,5 @@
+package main;
+
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
@@ -12,7 +14,7 @@ public class Main {
         System.out.println();
         if (args.length == 0) {
             Main m = new Main();
-            m.solveCalculator(0, 7, 28);
+            m.solveCalculator(0, 7, 424);
         } else {
             System.out.println("arg0 = ".concat(args[0]));
         }
@@ -28,34 +30,54 @@ public class Main {
             while (cpt < moves) {
                 switch ((int) (Math.random() * 4)) {
                     case 0:
-                        answer += "+6";
-                        m += 6;
+                        if (m%2 == 0) {
+                            answer = answer.concat("/2");
+                            m /= 2;
+                        }
                         break;
                     case 1:
-                        answer += "-3";
-                        m -= 3;
+                        answer = answer.concat("5=>4");
+                        String[] b = String.valueOf(Math.abs(m)).split("");
+                        String k = "";
+                        for (int i = 0; i < b.length; i++) {
+                            if (b[i].equals("5")) {
+                                b[i] = "4";
+                            }
+                            k = k.concat(b[i]);
+                        }
+                        m = m < 0 ? Integer.valueOf(k) * -1 : Integer.valueOf(k);
                         break;
                     case 2:
                         if (Math.abs(m) >= 10) {
-                            answer += "Reverse";
+                            answer = answer.concat("Reverse");
                             String[] c = String.valueOf(Math.abs(m)).split("");
-                            String k = "";
+                            String l = "";
                             for (int i = c.length - 1; i>=0; i--) {
-                                k += c[i];
+                                l = l.concat(c[i]);
                             }
-                            m = m < 0 ? Integer.valueOf(k) * -1 : Integer.valueOf(k);
+                            m = m < 0 ? Integer.valueOf(l) * -1 : Integer.valueOf(l);
                         }
                         break;
                     case 3:
+                        answer = answer.concat("5");
+                        m = m * 10 + 5;
+                        break;
+                    /* case 3:
                         if (Math.abs(m) >= 10) {
                             answer += "<<";
                             m = m/10;
                         }
                         break;
+                    case 3:
+                        answer = answer.concat("1");
+                        m *= 10;
+                        m += 1;
+                        break;
+                        */
                 }
                 cpt++;
                 if (cpt < moves) {
-                    answer += " ==> ";
+                    answer = answer.concat(" ==> ");
                 }
             }
         }
