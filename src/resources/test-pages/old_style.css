@@ -70,6 +70,21 @@ button {
   font-size: 16px;
   cursor: pointer;
   border-radius: 12px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.love {
+	background-color: yellow;
+	border: none;
+	color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
 }
 
 .swal-text {
