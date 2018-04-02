@@ -1,20 +1,26 @@
 <html>
 	<head>
 		<title>Bienvenue sur notre site</title>
-		<link href="home_style.css" rel="stylesheet" type="text/css"/>
+		<link href="styles/home_style.css" rel="stylesheet" type="text/css"/>
 		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-		<script src="main_script.js"></script>
+		<script src="scripts/main_script.js"></script>
 	</head>
 
 	<body>
 		<div class="background">
-			<img src="img/le_dramont.jpg" class="stretch"/>
+			<img src="img/light_blue_background.jpg" class="stretch"/>
 		</div>
 		<table>
 			<tr>
 				<td></td>
 				<td></td>
-				<td><a onClick="swal({text: 'Page en cours', icon: 'warning'});">Inspirations</a></td>
+				<!-- <td><a onClick="swal({text: 'Page en cours', icon: 'warning'});">Inspirations</a></td> -->
+				<td onmouseover="displayGifForId('inspirations')" onmouseout="hideGifForId('inspirations')">
+					<a href="pages/slideshow.html">Inspirations</a>
+					<div class="animationDiv" id="inspirations">
+						<img class="animation" src="img/carousel.gif"/>
+					</div>
+				</td>
 				<td></td>
 				<td></td>
 				<td>

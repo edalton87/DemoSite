@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Le caroussel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../styles/main_style.css" rel="stylesheet" type="text/css"/>
+	<link href="../styles/carousel_style.css" rel="stylesheet" type="text/css"/>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../scripts/main_script.js"></script>
+	<script src="../scripts/slideshow_script.js"></script>
+</head>
+
+<body>
+	<h1>Le caroussel</h1>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img src="../img/slideshow/french_dictionary.jpg">
+			<div class="text">Want to read all this?</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="../img/slideshow/essential_french_book.jpg">
+			<div class="text">How about this one?</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="../img/slideshow/kids_french_learning.jpg">
+			<div class="text">Even your kids can learn!</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="../img/slideshow/french_flag_book.png">
+			<div class="text">You'll be talking french really soon!</div>
+		</div>
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+	</div>
+	<br>
+
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+	    var slides = document.getElementsByClassName("mySlides");
+	    var dots = document.getElementsByClassName("dot");
+	    for (i = 0; i < slides.length; i++) {
+	       slides[i].style.display = "none";
+	    }
+			slideIndex++;
+	    if (slideIndex > slides.length) {slideIndex = 1}
+	    for (i = 0; i < dots.length; i++) {
+	        dots[i].className = dots[i].className.replace(" active", "");
+	    }
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 4000); // Change image every 2 seconds
+		}
+	</script>
+
+	<div class="homeText">
+		<p>Du blabla ici</p>
+		<p>Pourquoi pas?</p>
+	</div>
+	<div class="wrapperSuite">
+		<button class="previousButton" title="Retour" onClick="window.history.back();">Retour</button>
+	</div>
+</body>
+</html>
