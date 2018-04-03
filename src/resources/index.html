@@ -1,8 +1,8 @@
 <html>
 	<head>
-		<title>Bienvenue sur notre site</title>
+		<title>Bonjour et bienvenue !</title>
 		<link href="styles/home_style.css" rel="stylesheet" type="text/css"/>
-		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<link href="styles/main_style.css" rel="stylesheet" type="text/css"/>
 		<script src="scripts/main_script.js"></script>
 	</head>
 
@@ -10,63 +10,29 @@
 		<div class="background">
 			<img src="img/light_blue_background.jpg" class="stretch"/>
 		</div>
-		<table>
-			<tr>
-				<td></td>
-				<td></td>
-				<!-- <td><a onClick="swal({text: 'Page en cours', icon: 'warning'});">Inspirations</a></td> -->
-				<td onmouseover="displayGifForId('inspirations')" onmouseout="hideGifForId('inspirations')">
-					<a href="pages/slideshow.html">Inspirations</a>
-					<div class="animationDiv" id="inspirations">
-						<img class="animation" src="img/carousel.gif"/>
-					</div>
-				</td>
-				<td></td>
-				<td></td>
-				<td>
-					<a onClick="swal({text: 'Langue d\'affichage : Fran\u00E7ais', icon: 'success'});">FR</a>/
-					<a onclick="swal({text: 'English Language not available yet', icon: 'warning'});">EN</a>
-				</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><a href="pages/accueil.html">Accueil</a></td>
-				<td></td>
-				<td onmouseover="displayGifForId('trouvailles')" onmouseout="hideGifForId('trouvailles')">
-					<a onClick="swal({text: 'Page en cours', icon: 'warning'});">Trouvailles</a>
-					<div class="animationDiv" id="trouvailles">
-						<img class="animation" src="img/blooming_pink_rose.gif"/>
-					</div>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td onmouseover="displayGifForId('questionsExistentielles')" onmouseout="hideGifForId('questionsExistentielles')">
-					<a onClick="swal({text: 'Page en cours', icon: 'warning'});">Questions existentielles</a>
-					<div class="animationDiv" id="questionsExistentielles">
-						<img class="animation" src="img/question_box.gif"/>
-					</div>
-				</td>
-				<td></td>
-				<td onmouseover="displayGifForId('partages')" onmouseout="hideGifForId('partages')">
-					<a href="pages/partages.html">Partages</a>
-					<div class="animationDiv" id="partages">
-						<img class="animation" src="img/hungry_girl.gif"/>
-					</div>
-				</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><a href="pages/pensee_neuve.html">La pensée neuve</a></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table>
+		<div class="langBar">
+			<a href="index_EN.html" class="langFlag en"></a>
+			<a href="" class="langFlag fr"></a>
+		</div>
+		<h1>Bonjour et bienvenue !</h1>
+		<div class="homeText">
+			<p>Vous souhaitez apprendre le français, vous êtes motivés et vous souhaitez un moyen efficace qui vous assure une progression vers la maîtrise de la langue ? Vous recherchez une méthode structurée et intuitive afin que l'apprentissage se fasse de façon simple et plaisante ? Vous avez frappé à la bonne porte ! Sur ce site nous travaillons par étapes, nous prenons soin de nourrir votre motivation et de vous faire toujours être capable de parler français et de se faire comprendre dans cette langue.</p>
+			<p>Passionnée par les langues, j'aime les étudier en me fixant des objectifs. J'aime que l'apprentissage se fasse de manière ordonnée, cependant je tiens à ce qu'il soit intuitif. J'apporte une grande importance à la grammaire toutefois je mets un point d'honneur à privilégier le vocabulaire et les expressions françaises, après tout, ce sont les éléments principaux du message à transmettre n'est-ce pas ?</p>
+			<p>Sans plus attendre, découvrez les outils que je mets à votre disposition et faites-vous votre propre idée !</p>
+		</div>
+		<br>
+		<div>
+			<ul>
+				<li>
+					<img src="img/hello-bonjour.jpg"/>
+				</li>
+				<li>
+					<img src="img/learn-french-chalkboard.png"/>
+				</li>
+				<li>
+					<img src="img/learn-french-flag.jpg"/>
+				</li>
+			</ul>
+		</div>
 	</body>
 </html>

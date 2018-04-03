@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>Bienvenue sur notre site</title>
+		<link href="styles/home_style.css" rel="stylesheet" type="text/css"/>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="scripts/main_script.js"></script>
+	</head>
+
+	<body>
+		<div class="background">
+			<img src="img/light_blue_background.jpg" class="stretch"/>
+		</div>
+		<table>
+			<tr>
+				<td></td>
+				<td></td>
+				<!-- <td><a onClick="swal({text: 'Page en cours', icon: 'warning'});">Inspirations</a></td> -->
+				<td onmouseover="displayGifForId('inspirations')" onmouseout="hideGifForId('inspirations')">
+					<a href="pages/slideshow.html">Inspirations</a>
+					<div class="animationDiv" id="inspirations">
+						<img class="animation" src="img/carousel.gif"/>
+					</div>
+				</td>
+				<td></td>
+				<td></td>
+				<td>
+					<a onClick="swal({text: 'Langue d\'affichage : Fran\u00E7ais', icon: 'success'});">FR</a>/
+					<a onclick="swal({text: 'English Language not available yet', icon: 'warning'});">EN</a>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a href="pages/accueil.html">Accueil</a></td>
+				<td></td>
+				<td onmouseover="displayGifForId('trouvailles')" onmouseout="hideGifForId('trouvailles')">
+					<a onClick="swal({text: 'Page en cours', icon: 'warning'});">Trouvailles</a>
+					<div class="animationDiv" id="trouvailles">
+						<img class="animation" src="img/blooming_pink_rose.gif"/>
+					</div>
+				</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td onmouseover="displayGifForId('questionsExistentielles')" onmouseout="hideGifForId('questionsExistentielles')">
+					<a onClick="swal({text: 'Page en cours', icon: 'warning'});">Questions existentielles</a>
+					<div class="animationDiv" id="questionsExistentielles">
+						<img class="animation" src="img/question_box.gif"/>
+					</div>
+				</td>
+				<td></td>
+				<td onmouseover="displayGifForId('partages')" onmouseout="hideGifForId('partages')">
+					<a href="pages/partages.html">Partages</a>
+					<div class="animationDiv" id="partages">
+						<img class="animation" src="img/hungry_girl.gif"/>
+					</div>
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a href="pages/pensee_neuve.html">La pensée neuve</a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>
