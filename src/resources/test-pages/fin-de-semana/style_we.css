@@ -4,3 +4,7 @@ p {
 	font-family: Verdana;
 	font-size: 40px;
 }
+
+img {
+	display: none;
+}
